@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10;
+  background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-high-tech-molecular-structure-hexagonal-link-medical-picture-image_1158382.jpg);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: inline-block; 
+  margin: 20px auto; 
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.card-header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-menu,
+.right-menu {
+  flex-basis: 48%;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
+.description {
+  margin-bottom: 10px;
+}

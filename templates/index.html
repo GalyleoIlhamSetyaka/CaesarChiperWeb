@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Caesar Cipher Encryption/Decryption</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h2>Caesar Cipher Encryption/Decryption</h2>
+          <p class="description">
+            Masukan key yang anda inginkan untuk enkripsi data
+          </p>
+        </div>
+        <div class="card-body">
+          <div class="left-menu">
+            <h3>Encrypt</h3>
+            <form action="/encrypt" method="POST" enctype="multipart/form-data">
+              <label for="encrypt-key">Key:</label>
+              <input type="text" name="key" id="encrypt-key" required />
+              <br /><br />
+              <input type="file" name="file" id="encrypt-file" required />
+              <br /><br />
+              <input type="submit" value="Encrypt" />
+            </form>
+          </div>
+
+          <div class="right-menu">
+            <h3>Decrypt</h3>
+            <form action="/decrypt" method="POST" enctype="multipart/form-data">
+              <label for="decrypt-key">Key:</label>
+              <input type="text" name="key" id="decrypt-key" required />
+              <br /><br />
+              <input type="file" name="file" id="decrypt-file" required />
+              <br /><br />
+              <input type="submit" value="Decrypt" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
